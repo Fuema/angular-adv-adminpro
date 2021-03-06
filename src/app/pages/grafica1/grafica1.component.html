@@ -1,1 +1,21 @@
-<p>grafica1 works!</p>
+<div class="row">
+  <div class="col-6">
+    <h2>{{title1}}</h2>
+     <app-donuthgraph [title]='title1' [labels]="labels1" [data]='data1' ></app-donuthgraph>
+  </div>
+  <div class="col-6">
+    <h2>{{title2}}</h2>
+    <app-donuthgraph [title]='title2' [labels]="labels2" [data]='data2'></app-donuthgraph>
+ </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <h2>{{title3}}</h2>
+    <app-donuthgraph [title]='title3' [labels]="labels3" [data]='data3'></app-donuthgraph>
+  </div>
+  <div class="col-6">
+    <h2>{{title4}}</h2>
+    <app-donuthgraph [title]='title4' [labels]="labels4" [data]='data4'></app-donuthgraph>
+ </div>
+</div>
