@@ -1,8 +1,8 @@
-import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { BredcrumsComponent } from './bredcrums/bredcrums.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+import { HeaderComponent, SidebarComponent, BredcrumsComponent } from './index';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { CommonModule } from '@angular/common';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class SharedModule { }
